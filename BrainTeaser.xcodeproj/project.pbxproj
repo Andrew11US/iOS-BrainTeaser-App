@@ -13,6 +13,8 @@
 		90F645931E47C6DC00E45BB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F645911E47C6DC00E45BB4 /* Main.storyboard */; };
 		90F645951E47C6DC00E45BB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F645941E47C6DC00E45BB4 /* Assets.xcassets */; };
 		90F645981E47C6DC00E45BB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F645961E47C6DC00E45BB4 /* LaunchScreen.storyboard */; };
+		90F645A71E47D2E800E45BB4 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F645A61E47D2E800E45BB4 /* CustomTextField.swift */; };
+		90F645A91E47D9AE00E45BB4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F645A81E47D9AE00E45BB4 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		90F645971E47C6DC00E45BB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90F645991E47C6DC00E45BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90F6459F1E47CD4E00E45BB4 /* BrainTeaser-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrainTeaser-Bridging-Header.h"; sourceTree = "<group>"; };
+		90F645A61E47D2E800E45BB4 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		90F645A81E47D9AE00E45BB4 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		AB795D697236D920377BEE4F /* Pods_BrainTeaser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainTeaser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9888F70683B72FE3C46B08F /* Pods-BrainTeaser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser.debug.xcconfig"; sourceTree = "<group>"; };
 		ED09EFD2D1E8E8F3F3D9F656 /* Pods-BrainTeaser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,8 +75,10 @@
 		90F6458C1E47C6DB00E45BB4 /* BrainTeaser */ = {
 			isa = PBXGroup;
 			children = (
+				90F645A51E47D2A800E45BB4 /* Controllers */,
+				90F645A41E47D2A300E45BB4 /* View */,
+				90F645A31E47D29600E45BB4 /* Model */,
 				90F6458D1E47C6DC00E45BB4 /* AppDelegate.swift */,
-				90F6458F1E47C6DC00E45BB4 /* LoginVC.swift */,
 				90F645911E47C6DC00E45BB4 /* Main.storyboard */,
 				90F645941E47C6DC00E45BB4 /* Assets.xcassets */,
 				90F645961E47C6DC00E45BB4 /* LaunchScreen.storyboard */,
@@ -80,6 +86,30 @@
 				90F6459F1E47CD4E00E45BB4 /* BrainTeaser-Bridging-Header.h */,
 			);
 			path = BrainTeaser;
+			sourceTree = "<group>";
+		};
+		90F645A31E47D29600E45BB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		90F645A41E47D2A300E45BB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90F645A61E47D2E800E45BB4 /* CustomTextField.swift */,
+				90F645A81E47D9AE00E45BB4 /* CustomButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		90F645A51E47D2A800E45BB4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				90F6458F1E47C6DC00E45BB4 /* LoginVC.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		DDC8A2F19A409ABBE2C8E5C6 /* Frameworks */ = {
@@ -215,8 +245,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F645A91E47D9AE00E45BB4 /* CustomButton.swift in Sources */,
 				90F645901E47C6DC00E45BB4 /* LoginVC.swift in Sources */,
 				90F6458E1E47C6DC00E45BB4 /* AppDelegate.swift in Sources */,
+				90F645A71E47D2E800E45BB4 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
