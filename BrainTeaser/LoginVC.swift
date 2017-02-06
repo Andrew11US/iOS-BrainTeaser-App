@@ -10,6 +10,8 @@ import UIKit
 import pop
 
 class LoginVC: UIViewController {
+    
+    @IBOutlet weak var loginBtn: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,10 @@ class LoginVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func loginBtnPressed(_ sender: CustomButton) {
+        
+    }
+    
+    
 }
 

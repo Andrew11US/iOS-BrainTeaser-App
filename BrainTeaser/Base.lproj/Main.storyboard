@@ -29,7 +29,7 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VGQ-AQ-8vq" customClass="CustomTextField" customModule="BrainTeaser" customModuleProvider="target">
-                                <rect key="frame" x="97" y="318" width="180" height="35"/>
+                                <rect key="frame" x="97.5" y="318" width="180" height="35"/>
                                 <color key="backgroundColor" red="0.83272149145300622" green="0.83272149145300622" blue="0.83272149145300622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="dAE-7v-9cX"/>
@@ -45,7 +45,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cgf-Bu-4tB" customClass="CustomTextField" customModule="BrainTeaser" customModuleProvider="target">
-                                <rect key="frame" x="97" y="378" width="180" height="35"/>
+                                <rect key="frame" x="97.5" y="378" width="180" height="35"/>
                                 <color key="backgroundColor" red="0.83272149149999997" green="0.83272149149999997" blue="0.83272149149999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="2kA-5G-vFL"/>
@@ -68,9 +68,15 @@
                                     <constraint firstAttribute="width" constant="120" id="diP-N0-prW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" title="Login"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9wJ-sf-iMb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -85,6 +91,9 @@
                             <constraint firstItem="Vxj-Zj-kka" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zlx-CU-Hh9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="Vxj-Zj-kka" id="sa2-CR-0td"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

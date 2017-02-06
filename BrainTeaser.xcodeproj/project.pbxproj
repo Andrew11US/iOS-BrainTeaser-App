@@ -15,6 +15,7 @@
 		90F645981E47C6DC00E45BB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F645961E47C6DC00E45BB4 /* LaunchScreen.storyboard */; };
 		90F645A71E47D2E800E45BB4 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F645A61E47D2E800E45BB4 /* CustomTextField.swift */; };
 		90F645A91E47D9AE00E45BB4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F645A81E47D9AE00E45BB4 /* CustomButton.swift */; };
+		90F645AB1E47EAB800E45BB4 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F645AA1E47EAB700E45BB4 /* pop.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		90F6459F1E47CD4E00E45BB4 /* BrainTeaser-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrainTeaser-Bridging-Header.h"; sourceTree = "<group>"; };
 		90F645A61E47D2E800E45BB4 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		90F645A81E47D9AE00E45BB4 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		90F645AA1E47EAB700E45BB4 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "../../../Library/Developer/Xcode/DerivedData/BrainTeaser-gbvuznhgbswsdpfmqtuoqsgxmrvt/Build/Products/Debug-iphoneos/pop/pop.framework"; sourceTree = "<group>"; };
 		AB795D697236D920377BEE4F /* Pods_BrainTeaser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainTeaser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9888F70683B72FE3C46B08F /* Pods-BrainTeaser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser.debug.xcconfig"; sourceTree = "<group>"; };
 		ED09EFD2D1E8E8F3F3D9F656 /* Pods-BrainTeaser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser.release.xcconfig"; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F645AB1E47EAB800E45BB4 /* pop.framework in Frameworks */,
 				06FF71C735B78CD64F0A0C97 /* Pods_BrainTeaser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,9 +82,9 @@
 				90F645A41E47D2A300E45BB4 /* View */,
 				90F645A31E47D29600E45BB4 /* Model */,
 				90F6458D1E47C6DC00E45BB4 /* AppDelegate.swift */,
+				90F645961E47C6DC00E45BB4 /* LaunchScreen.storyboard */,
 				90F645911E47C6DC00E45BB4 /* Main.storyboard */,
 				90F645941E47C6DC00E45BB4 /* Assets.xcassets */,
-				90F645961E47C6DC00E45BB4 /* LaunchScreen.storyboard */,
 				90F645991E47C6DC00E45BB4 /* Info.plist */,
 				90F6459F1E47CD4E00E45BB4 /* BrainTeaser-Bridging-Header.h */,
 			);
@@ -115,6 +118,7 @@
 		DDC8A2F19A409ABBE2C8E5C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90F645AA1E47EAB700E45BB4 /* pop.framework */,
 				AB795D697236D920377BEE4F /* Pods_BrainTeaser.framework */,
 			);
 			name = Frameworks;
