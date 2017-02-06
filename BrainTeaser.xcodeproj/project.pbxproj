@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		06FF71C735B78CD64F0A0C97 /* Pods_BrainTeaser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB795D697236D920377BEE4F /* Pods_BrainTeaser.framework */; };
+		9009CD1F1E48CD3100D8C090 /* AnimationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009CD1E1E48CD3100D8C090 /* AnimationEngine.swift */; };
 		90F6458E1E47C6DC00E45BB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6458D1E47C6DC00E45BB4 /* AppDelegate.swift */; };
 		90F645901E47C6DC00E45BB4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6458F1E47C6DC00E45BB4 /* LoginVC.swift */; };
 		90F645931E47C6DC00E45BB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F645911E47C6DC00E45BB4 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9009CD1E1E48CD3100D8C090 /* AnimationEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationEngine.swift; sourceTree = "<group>"; };
 		90F6458A1E47C6DB00E45BB4 /* BrainTeaser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainTeaser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F6458D1E47C6DC00E45BB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90F6458F1E47C6DC00E45BB4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9009CD1D1E48CD1800D8C090 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9009CD1E1E48CD3100D8C090 /* AnimationEngine.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		90F645811E47C6DB00E45BB4 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +88,7 @@
 		90F6458C1E47C6DB00E45BB4 /* BrainTeaser */ = {
 			isa = PBXGroup;
 			children = (
+				9009CD1D1E48CD1800D8C090 /* Utilities */,
 				90F645A51E47D2A800E45BB4 /* Controllers */,
 				90F645A41E47D2A300E45BB4 /* View */,
 				90F645A31E47D29600E45BB4 /* Model */,
@@ -252,6 +263,7 @@
 				90F645A91E47D9AE00E45BB4 /* CustomButton.swift in Sources */,
 				90F645901E47C6DC00E45BB4 /* LoginVC.swift in Sources */,
 				90F6458E1E47C6DC00E45BB4 /* AppDelegate.swift in Sources */,
+				9009CD1F1E48CD3100D8C090 /* AnimationEngine.swift in Sources */,
 				90F645A71E47D2E800E45BB4 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
