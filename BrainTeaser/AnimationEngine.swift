@@ -24,7 +24,6 @@ class AnimationEngine {
         
     }
     
-    let ANIM_DELAY = 0.8
     var originalConstants = [CGFloat]()
     var constraints: [NSLayoutConstraint]!
     
@@ -40,14 +39,14 @@ class AnimationEngine {
     
     func animateOnScreen(delay: Int) {
         
-        // Delay using
+        // Delay using DispatchTime
         let delay = DispatchTime.now() + .seconds(delay)
         DispatchQueue.main.asyncAfter(deadline: delay) {
             print("test")
         }
         
-        // 5 second delay using Timer
-        _ = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false) { (timer) in
+        // 2 second delay using Timer
+        _ = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { (timer) in
             
             var index = 0
             repeat {
@@ -59,6 +58,7 @@ class AnimationEngine {
                 
                 if (index > 0) {
                     moveAnim?.dynamicsFriction += 10 + CGFloat(index)
+                    moveAnim?.dynamicsMass = 2
                 }
                 
                 let con = self.constraints[index]
@@ -69,6 +69,15 @@ class AnimationEngine {
             } while (index < self.constraints.count)
             
         }
+    }
+    
+    class func animateToPosition(view: UIView, position: CGPoint, completion: @escaping ((POPAnimation?, Bool) -> Swift.Void)) {
+        let moveAnim = POPSpringAnimation(propertyNamed: kPOPLayerPosition)
+        moveAnim?.toValue = NSValue(cgPoint: position)
+        moveAnim?.springBounciness = 8
+        moveAnim?.springSpeed = 8
+        moveAnim?.completionBlock = completion
+        view.pop_add(moveAnim, forKey: "moveToPosition")
     }
     
 }

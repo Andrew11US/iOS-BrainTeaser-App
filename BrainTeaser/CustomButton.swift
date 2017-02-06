@@ -45,20 +45,19 @@ class CustomButton: UIButton {
     func scaleToSmall() {
         
         let scaleAmim = POPBasicAnimation(propertyNamed: kPOPLayerScaleXY)
-        scaleAmim?.toValue = NSValue(cgSize: CGSize(width: 0.95, height: 0.95))
+        scaleAmim?.toValue = NSValue(cgSize: CGSize(width: 0.75, height: 0.75))
         self.layer.pop_add(scaleAmim, forKey: "LayerScaleSmallAnimation")
 
     }
     
     func scaleAnimation() {
-        // Make bounce effect for action touchUpInside!!!
-/*
-        let scaleAnim = POPSpringAnimation(propertyNamed: "kPOPLayerScaleXY")
+
+        let scaleAnim = POPSpringAnimation(propertyNamed: kPOPLayerScaleXY)
         scaleAnim?.velocity = NSValue(cgPoint: CGPoint(x: 3.0, y: 3.0))
         scaleAnim?.toValue = NSValue(cgPoint: CGPoint(x: 1.0, y: 1.0))
         scaleAnim?.springBounciness = 18.0
         self.layer.pop_add(scaleAnim, forKey: "LayerScaleSmallAnimation")
- */
+        
     }
     
     func scaleDefault() {

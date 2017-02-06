@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		06FF71C735B78CD64F0A0C97 /* Pods_BrainTeaser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB795D697236D920377BEE4F /* Pods_BrainTeaser.framework */; };
 		9009CD1F1E48CD3100D8C090 /* AnimationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009CD1E1E48CD3100D8C090 /* AnimationEngine.swift */; };
+		9009CD211E48E02800D8C090 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009CD201E48E02800D8C090 /* GameVC.swift */; };
+		9009CD231E48E1F200D8C090 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009CD221E48E1F200D8C090 /* Card.swift */; };
+		9009CD251E48E20E00D8C090 /* Card.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9009CD241E48E20E00D8C090 /* Card.xib */; };
 		90F6458E1E47C6DC00E45BB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6458D1E47C6DC00E45BB4 /* AppDelegate.swift */; };
 		90F645901E47C6DC00E45BB4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6458F1E47C6DC00E45BB4 /* LoginVC.swift */; };
 		90F645931E47C6DC00E45BB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F645911E47C6DC00E45BB4 /* Main.storyboard */; };
@@ -21,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		9009CD1E1E48CD3100D8C090 /* AnimationEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationEngine.swift; sourceTree = "<group>"; };
+		9009CD201E48E02800D8C090 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		9009CD221E48E1F200D8C090 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		9009CD241E48E20E00D8C090 /* Card.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Card.xib; sourceTree = "<group>"; };
 		90F6458A1E47C6DB00E45BB4 /* BrainTeaser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainTeaser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F6458D1E47C6DC00E45BB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90F6458F1E47C6DC00E45BB4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -59,12 +65,27 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		9009CD1D1E48CD1800D8C090 /* Utilities */ = {
+		9009CD261E490D1000D8C090 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				9009CD1E1E48CD3100D8C090 /* AnimationEngine.swift */,
+				90F645961E47C6DC00E45BB4 /* LaunchScreen.storyboard */,
+				90F645911E47C6DC00E45BB4 /* Main.storyboard */,
+				90F645A61E47D2E800E45BB4 /* CustomTextField.swift */,
+				90F645A81E47D9AE00E45BB4 /* CustomButton.swift */,
+				9009CD221E48E1F200D8C090 /* Card.swift */,
+				9009CD241E48E20E00D8C090 /* Card.xib */,
 			);
-			name = Utilities;
+			name = UI;
+			sourceTree = "<group>";
+		};
+		9009CD271E490D8300D8C090 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				90F6458D1E47C6DC00E45BB4 /* AppDelegate.swift */,
+				90F645991E47C6DC00E45BB4 /* Info.plist */,
+				90F6459F1E47CD4E00E45BB4 /* BrainTeaser-Bridging-Header.h */,
+			);
+			name = "Support Files";
 			sourceTree = "<group>";
 		};
 		90F645811E47C6DB00E45BB4 = {
@@ -88,16 +109,11 @@
 		90F6458C1E47C6DB00E45BB4 /* BrainTeaser */ = {
 			isa = PBXGroup;
 			children = (
-				9009CD1D1E48CD1800D8C090 /* Utilities */,
-				90F645A51E47D2A800E45BB4 /* Controllers */,
-				90F645A41E47D2A300E45BB4 /* View */,
-				90F645A31E47D29600E45BB4 /* Model */,
-				90F6458D1E47C6DC00E45BB4 /* AppDelegate.swift */,
-				90F645961E47C6DC00E45BB4 /* LaunchScreen.storyboard */,
-				90F645911E47C6DC00E45BB4 /* Main.storyboard */,
+				9009CD261E490D1000D8C090 /* UI */,
 				90F645941E47C6DC00E45BB4 /* Assets.xcassets */,
-				90F645991E47C6DC00E45BB4 /* Info.plist */,
-				90F6459F1E47CD4E00E45BB4 /* BrainTeaser-Bridging-Header.h */,
+				90F645A51E47D2A800E45BB4 /* Controllers */,
+				90F645A31E47D29600E45BB4 /* Model */,
+				9009CD271E490D8300D8C090 /* Support Files */,
 			);
 			path = BrainTeaser;
 			sourceTree = "<group>";
@@ -105,23 +121,16 @@
 		90F645A31E47D29600E45BB4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9009CD1E1E48CD3100D8C090 /* AnimationEngine.swift */,
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		90F645A41E47D2A300E45BB4 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				90F645A61E47D2E800E45BB4 /* CustomTextField.swift */,
-				90F645A81E47D9AE00E45BB4 /* CustomButton.swift */,
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 		90F645A51E47D2A800E45BB4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				90F6458F1E47C6DC00E45BB4 /* LoginVC.swift */,
+				9009CD201E48E02800D8C090 /* GameVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -202,6 +211,7 @@
 				90F645981E47C6DC00E45BB4 /* LaunchScreen.storyboard in Resources */,
 				90F645951E47C6DC00E45BB4 /* Assets.xcassets in Resources */,
 				90F645931E47C6DC00E45BB4 /* Main.storyboard in Resources */,
+				9009CD251E48E20E00D8C090 /* Card.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +272,10 @@
 			files = (
 				90F645A91E47D9AE00E45BB4 /* CustomButton.swift in Sources */,
 				90F645901E47C6DC00E45BB4 /* LoginVC.swift in Sources */,
+				9009CD231E48E1F200D8C090 /* Card.swift in Sources */,
 				90F6458E1E47C6DC00E45BB4 /* AppDelegate.swift in Sources */,
 				9009CD1F1E48CD3100D8C090 /* AnimationEngine.swift in Sources */,
+				9009CD211E48E02800D8C090 /* GameVC.swift in Sources */,
 				90F645A71E47D2E800E45BB4 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,12 +12,8 @@ import pop
 class LoginVC: UIViewController {
     
     @IBOutlet weak var emailConstraint: NSLayoutConstraint!
-    
     @IBOutlet weak var passwordConstraint: NSLayoutConstraint!
-    
     @IBOutlet weak var loginBtnConstraint: NSLayoutConstraint!
-    
-    @IBOutlet weak var loginBtn: UIButton!
 
     var animEngine: AnimationEngine!
     
@@ -31,14 +27,9 @@ class LoginVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        self.animEngine.animateOnScreen(delay: 2)
+        self.animEngine.animateOnScreen(delay: 1)
         
     }
-
-    @IBAction func loginBtnPressed(_ sender: CustomButton) {
-        
-    }
-    
     
 }
 
