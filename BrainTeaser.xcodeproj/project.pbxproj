@@ -20,6 +20,7 @@
 		90F645A71E47D2E800E45BB4 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F645A61E47D2E800E45BB4 /* CustomTextField.swift */; };
 		90F645A91E47D9AE00E45BB4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F645A81E47D9AE00E45BB4 /* CustomButton.swift */; };
 		90F645AB1E47EAB800E45BB4 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F645AA1E47EAB700E45BB4 /* pop.framework */; };
+		90F8A0A71E67718C007FF046 /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F8A0A61E67718C007FF046 /* CustomImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		90F645A61E47D2E800E45BB4 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		90F645A81E47D9AE00E45BB4 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		90F645AA1E47EAB700E45BB4 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "../../../Library/Developer/Xcode/DerivedData/BrainTeaser-gbvuznhgbswsdpfmqtuoqsgxmrvt/Build/Products/Debug-iphoneos/pop/pop.framework"; sourceTree = "<group>"; };
+		90F8A0A61E67718C007FF046 /* CustomImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
 		AB795D697236D920377BEE4F /* Pods_BrainTeaser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainTeaser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9888F70683B72FE3C46B08F /* Pods-BrainTeaser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser.debug.xcconfig"; sourceTree = "<group>"; };
 		ED09EFD2D1E8E8F3F3D9F656 /* Pods-BrainTeaser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				90F645911E47C6DC00E45BB4 /* Main.storyboard */,
 				90F645A61E47D2E800E45BB4 /* CustomTextField.swift */,
 				90F645A81E47D9AE00E45BB4 /* CustomButton.swift */,
+				90F8A0A61E67718C007FF046 /* CustomImage.swift */,
 				9009CD221E48E1F200D8C090 /* Card.swift */,
 				9009CD241E48E20E00D8C090 /* Card.xib */,
 			);
@@ -272,6 +275,7 @@
 			files = (
 				90F645A91E47D9AE00E45BB4 /* CustomButton.swift in Sources */,
 				90F645901E47C6DC00E45BB4 /* LoginVC.swift in Sources */,
+				90F8A0A71E67718C007FF046 /* CustomImage.swift in Sources */,
 				9009CD231E48E1F200D8C090 /* Card.swift in Sources */,
 				90F6458E1E47C6DC00E45BB4 /* AppDelegate.swift in Sources */,
 				9009CD1F1E48CD3100D8C090 /* AnimationEngine.swift in Sources */,
