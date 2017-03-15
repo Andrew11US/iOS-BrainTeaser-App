@@ -11,8 +11,6 @@ import pop
 
 class LoginVC: UIViewController {
     
-    @IBOutlet weak var emailConstraint: NSLayoutConstraint!
-    @IBOutlet weak var passwordConstraint: NSLayoutConstraint!
     @IBOutlet weak var loginBtnConstraint: NSLayoutConstraint!
     @IBOutlet weak var imageConstraint: NSLayoutConstraint!
 
@@ -21,11 +19,10 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.animEngine = AnimationEngine(constraints: [loginBtnConstraint, imageConstraint])
+        self.animEngine = AnimationEngine(constraints: [loginBtnConstraint])
         
     }
 
-    
     override func viewDidAppear(_ animated: Bool) {
         
         self.animEngine.animateOnScreen(delay: 1)

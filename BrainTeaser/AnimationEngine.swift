@@ -40,13 +40,13 @@ class AnimationEngine {
     func animateOnScreen(delay: Int) {
         
         // Delay using DispatchTime
-        let delay = DispatchTime.now() + .seconds(delay)
-        DispatchQueue.main.asyncAfter(deadline: delay) {
-            print("test")
-        }
+//        let delay = DispatchTime.now() + .seconds(delay)
+//        DispatchQueue.main.asyncAfter(deadline: delay) {
+//            print("test")
+//        }
         
         // 2 second delay using Timer
-        _ = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { (timer) in
+        _ = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (timer) in
             
             var index = 0
             repeat {

@@ -16,6 +16,10 @@ class GameVC: UIViewController {
     @IBOutlet weak var titleLbl: UILabel!
     
     var currentCard: Card!
+    var card1: String!
+    var card2: String!
+    var correctAnswer = 0
+    var wrongAnswer = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,10 +31,13 @@ class GameVC: UIViewController {
         
     }
     
-    @IBAction func yesPressed(_ sender: UIButton) {
-        if sender.titleLabel?.text == "Yes" {
+    @IBAction func yesPressed(_ sender: CustomButton) {
+        
+        if sender.titleLabel?.text == "YES" {
             checkAnswer()
         } else {
+            card1 = currentCard.currentShape
+            print(card1)
             titleLbl.text = "Does this card match the previous?"
         }
         
@@ -38,7 +45,7 @@ class GameVC: UIViewController {
         print("YES pressed")
     }
     
-    @IBAction func noPressed(_ sender: AnyObject) {
+    @IBAction func noPressed(_ sender: CustomButton) {
         checkAnswer()
         showNextCard()
         print("No pressed")
@@ -78,6 +85,16 @@ class GameVC: UIViewController {
     
     func checkAnswer() {
         
+        card2 = currentCard.currentShape
+        print(card2)
+        
+        if card1 == card2 {
+            correctAnswer += 1
+        } else {
+            wrongAnswer += 1
+        }
+        print(correctAnswer)
+        print(wrongAnswer)
     }
     
 }
