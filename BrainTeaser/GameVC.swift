@@ -33,15 +33,16 @@ class GameVC: UIViewController {
     @IBAction func yesPressed(_ sender: CustomButton) {
         
         if sender.titleLabel?.text == "YES" {
+            
             checkAnswer()
             increaseNumber()
             
             print("YES pressed")
         } else {
+            
             cardArray.append(currentCard.currentShape)
             print(cardArray)
             setTimer()
-            
             titleLbl.text = "Does this card match the previous?"
         }
         
@@ -49,9 +50,11 @@ class GameVC: UIViewController {
     }
     
     @IBAction func noPressed(_ sender: CustomButton) {
+        
         checkAnswerNo()
         increaseNumber()
         showNextCard()
+        
         print("No pressed")
     }
     
@@ -128,7 +131,7 @@ class GameVC: UIViewController {
     }
     
     func setTimer() {
-        _ = Timer.scheduledTimer(withTimeInterval: 3.0, repeats: false) { (timer) in
+        _ = Timer.scheduledTimer(withTimeInterval: 20.0, repeats: false) { (timer) in
             
             self.performSegue(withIdentifier: "ResultVC", sender: nil)
             print("Time Over")
