@@ -12,7 +12,6 @@ import pop
 class LoginVC: UIViewController {
     
     @IBOutlet weak var loginBtnConstraint: NSLayoutConstraint!
-    @IBOutlet weak var imageConstraint: NSLayoutConstraint!
 
     var animEngine: AnimationEngine!
     

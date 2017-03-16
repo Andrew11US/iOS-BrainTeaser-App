@@ -45,12 +45,12 @@
                                     <segue destination="zml-9B-Ooc" kind="show" id="Jz6-8l-h71"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brain Teaser" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUP-jP-2pE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brain Teaser" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="rUP-jP-2pE">
                                 <rect key="frame" x="16" y="45" width="343" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="IKx-Cu-Tg9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -63,7 +63,6 @@
                             <constraint firstItem="wNb-uH-brI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="in0-0r-ooJ"/>
                             <constraint firstItem="rUP-jP-2pE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mGo-wL-0To"/>
                             <constraint firstItem="wNb-uH-brI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="voy-Ze-gOJ"/>
-                            <constraint firstItem="Vxj-Zj-kka" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wE7-Uz-NDC"/>
                             <constraint firstItem="wNb-uH-brI" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="xdV-AO-3r4"/>
                             <constraint firstItem="rUP-jP-2pE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="y7E-7a-kcy"/>
                             <constraint firstItem="Vxj-Zj-kka" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zlx-CU-Hh9"/>
@@ -127,13 +126,12 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="noPressed:" destination="zml-9B-Ooc" eventType="touchUpInside" id="793-rW-UB8"/>
-                                    <segue destination="032-KU-MFz" kind="show" id="obN-QH-8Kw"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember this Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cgX-I2-ggu">
-                                <rect key="frame" x="16" y="50" width="343" height="27.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="16" y="50" width="343" height="37"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="26"/>
+                                <color key="textColor" red="1" green="0.13115554169999999" blue="0.2395293661" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -178,7 +176,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="pW9-du-dY6"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="46"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -187,7 +185,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="95" id="iCY-Ph-1gz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="80"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="80"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
