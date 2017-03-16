@@ -44,7 +44,6 @@ class ResultVC: UIViewController {
         
         correctAnswer = 0
         wrongAnswer = 0
-        resultLbl.text = "Results"
         
     }
 }
