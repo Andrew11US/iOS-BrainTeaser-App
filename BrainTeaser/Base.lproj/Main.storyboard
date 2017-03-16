@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,14 +19,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="wNb-uH-brI" userLabel="bg" customClass="CustomImage" customModule="BrainTeaser" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxj-Zj-kka" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
-                                <rect key="frame" x="107.5" y="303.5" width="160" height="60"/>
+                                <rect key="frame" x="127" y="538" width="160" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="dai-kn-Ldj"/>
@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brain Teaser" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="rUP-jP-2pE">
-                                <rect key="frame" x="16" y="45" width="343" height="70"/>
+                                <rect key="frame" x="20" y="45" width="374" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="IKx-Cu-Tg9"/>
                                 </constraints>
@@ -54,11 +54,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bulb" translatesAutoresizingMaskIntoConstraints="NO" id="zOp-vs-IrC">
+                                <rect key="frame" x="0.0" y="123" width="414" height="385"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Vxj-Zj-kka" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LLR-vG-Fxz"/>
+                            <constraint firstItem="zOp-vs-IrC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Dq7-gx-NjG"/>
+                            <constraint firstAttribute="trailing" secondItem="zOp-vs-IrC" secondAttribute="trailing" id="FM1-yJ-oWn"/>
+                            <constraint firstItem="zOp-vs-IrC" firstAttribute="top" secondItem="rUP-jP-2pE" secondAttribute="bottom" constant="8" id="I9t-eK-LG6"/>
+                            <constraint firstItem="Vxj-Zj-kka" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="200" id="LLR-vG-Fxz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rUP-jP-2pE" secondAttribute="trailing" id="OA8-An-rch"/>
+                            <constraint firstItem="Vxj-Zj-kka" firstAttribute="top" secondItem="zOp-vs-IrC" secondAttribute="bottom" constant="30" id="Ywc-kE-KOU"/>
                             <constraint firstItem="wNb-uH-brI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eT9-CC-4pL"/>
                             <constraint firstItem="wNb-uH-brI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="in0-0r-ooJ"/>
                             <constraint firstItem="rUP-jP-2pE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mGo-wL-0To"/>
@@ -74,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31.884057971014496" y="36.684782608695656"/>
+            <point key="canvasLocation" x="31.875" y="35.91549295774648"/>
         </scene>
         <!--GameVC-->
         <scene sceneID="j8W-4Q-AY8">
@@ -85,12 +92,12 @@
                         <viewControllerLayoutGuide type="bottom" id="OY9-xE-m3P"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tUq-PE-e1Q">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5K-cI-UnA" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
-                                <rect key="frame" x="239" y="607" width="120" height="40"/>
-                                <color key="backgroundColor" red="0.0" green="0.90086183814227883" blue="0.57352754107615567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="274" y="676" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.90086183809999998" blue="0.57352754110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="E4N-Mu-gne"/>
                                     <constraint firstAttribute="width" constant="120" id="UAu-kF-dvI"/>
@@ -109,8 +116,8 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AF-Ht-o56" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
-                                <rect key="frame" x="16" y="607" width="120" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.13115554171774968" blue="0.23952936609550257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="20" y="676" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.9951590895652771" green="0.16735607385635376" blue="0.39435189962387085" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="aVB-JW-tfi"/>
                                     <constraint firstAttribute="height" constant="40" id="bUm-4j-aki"/>
@@ -129,9 +136,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember this Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cgX-I2-ggu">
-                                <rect key="frame" x="16" y="50" width="343" height="37"/>
+                                <rect key="frame" x="20" y="50" width="374" height="37"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="26"/>
-                                <color key="textColor" red="1" green="0.13115554169999999" blue="0.2395293661" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.99923688173294067" green="0.17799746990203857" blue="0.20492666959762573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -166,14 +173,14 @@
                         <viewControllerLayoutGuide type="bottom" id="GZx-ma-dGj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2Rs-QR-OYo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="jKV-j3-5Rg">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zud-nT-4zv">
-                                <rect key="frame" x="16" y="40" width="343" height="75"/>
+                                <rect key="frame" x="20" y="40" width="374" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="pW9-du-dY6"/>
                                 </constraints>
@@ -182,15 +189,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EwH-dP-nwa" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
-                                <rect key="frame" x="127.5" y="607" width="120" height="40"/>
-                                <color key="backgroundColor" red="0.0" green="0.90086183809999998" blue="0.57352754110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="147" y="676" width="120" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="Rfd-g8-fTs"/>
                                     <constraint firstAttribute="height" constant="40" id="mIp-Ms-8ev"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="Done">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.9951513409614563" green="0.16694861650466919" blue="0.40275093913078308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
@@ -203,7 +210,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zv-bo-lRk">
-                                <rect key="frame" x="16" y="123" width="343" height="75"/>
+                                <rect key="frame" x="20" y="123" width="374" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="sT5-hb-yZZ"/>
                                 </constraints>
@@ -212,7 +219,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETA-aQ-BzU">
-                                <rect key="frame" x="16" y="206" width="343" height="85"/>
+                                <rect key="frame" x="20" y="206" width="374" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="mXB-RO-GY5"/>
                                 </constraints>
@@ -221,21 +228,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wrong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqg-1y-2GZ">
-                                <rect key="frame" x="16" y="299" width="343" height="75"/>
+                                <rect key="frame" x="20" y="299" width="374" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="38G-Iv-hmN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="46"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.84676019703676253" green="0.84676019703676253" blue="0.84676019703676253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oz1-8f-320">
-                                <rect key="frame" x="16" y="382" width="343" height="85"/>
+                                <rect key="frame" x="20" y="382" width="374" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="Kei-YX-l4d"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="80"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.84676019700000005" green="0.84676019700000005" blue="0.84676019700000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -277,6 +284,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Bulb" width="1024" height="1024"/>
         <image name="bg" width="1080" height="1920"/>
     </resources>
 </document>
