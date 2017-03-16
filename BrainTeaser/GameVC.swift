@@ -16,8 +16,9 @@ class GameVC: UIViewController {
     @IBOutlet weak var titleLbl: UILabel!
     
     var currentCard: Card!
-    var card1: String!
-    var card2: String!
+    var cardArray = [String]()
+    var num = 0
+    var num1 = 1
     var correctAnswer = 0
     var wrongAnswer = 0
     
@@ -35,18 +36,22 @@ class GameVC: UIViewController {
         
         if sender.titleLabel?.text == "YES" {
             checkAnswer()
+            increaseNumber()
+            
+            print("YES pressed")
         } else {
-            card1 = currentCard.currentShape
-            print(card1)
+            cardArray.append(currentCard.currentShape)
+            print(cardArray)
+            
             titleLbl.text = "Does this card match the previous?"
         }
         
         showNextCard()
-        print("YES pressed")
     }
     
     @IBAction func noPressed(_ sender: CustomButton) {
-        checkAnswer()
+        checkAnswerNo()
+        increaseNumber()
         showNextCard()
         print("No pressed")
     }
@@ -84,17 +89,43 @@ class GameVC: UIViewController {
     }
     
     func checkAnswer() {
+        cardArray.append(currentCard.currentShape)
+        print(cardArray)
         
-        card2 = currentCard.currentShape
-        print(card2)
-        
-        if card1 == card2 {
+        if cardArray[num] == cardArray[num1] {
+            print("Equal")
             correctAnswer += 1
         } else {
+            print("Not equals")
             wrongAnswer += 1
         }
-        print(correctAnswer)
-        print(wrongAnswer)
+        
+        showAnswer()
+    }
+    
+    func checkAnswerNo() {
+        cardArray.append(currentCard.currentShape)
+        print(cardArray)
+        
+        if cardArray[num] == cardArray[num1] {
+            print("Equal")
+            wrongAnswer += 1
+        } else {
+            print("Not equals")
+            correctAnswer += 1
+        }
+        
+        showAnswer()
+    }
+    
+    func increaseNumber() {
+        num += 1
+        num1 += 1
+    }
+    
+    func showAnswer() {
+        print("Correct:\(correctAnswer)")
+        print("Wrong:\(wrongAnswer)")
     }
     
 }

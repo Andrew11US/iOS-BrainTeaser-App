@@ -42,7 +42,7 @@ class Card: UIView {
     }
     
     func selectShape() {
-        currentShape = shapes[Int(arc4random_uniform(8))]
+        currentShape = shapes[Int(arc4random_uniform(4))]
             shapeImage.image = UIImage(named: currentShape)
     }
 }
