@@ -19,8 +19,6 @@ class GameVC: UIViewController {
     var cardArray = [String]()
     var num = 0
     var num1 = 1
-    var correctAnswer = 0
-    var wrongAnswer = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +40,7 @@ class GameVC: UIViewController {
         } else {
             cardArray.append(currentCard.currentShape)
             print(cardArray)
+            setTimer()
             
             titleLbl.text = "Does this card match the previous?"
         }
@@ -126,6 +125,14 @@ class GameVC: UIViewController {
     func showAnswer() {
         print("Correct:\(correctAnswer)")
         print("Wrong:\(wrongAnswer)")
+    }
+    
+    func setTimer() {
+        _ = Timer.scheduledTimer(withTimeInterval: 3.0, repeats: false) { (timer) in
+            
+            self.performSegue(withIdentifier: "ResultVC", sender: nil)
+            print("Time Over")
+        }
     }
     
 }

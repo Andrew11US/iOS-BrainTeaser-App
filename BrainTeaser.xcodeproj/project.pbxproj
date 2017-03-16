@@ -13,6 +13,7 @@
 		9009CD231E48E1F200D8C090 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009CD221E48E1F200D8C090 /* Card.swift */; };
 		9009CD251E48E20E00D8C090 /* Card.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9009CD241E48E20E00D8C090 /* Card.xib */; };
 		9066C5791E708AD200B87CE8 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9066C5781E708AD200B87CE8 /* ResultVC.swift */; };
+		907CF4DB1E7AD65D00BC83AA /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907CF4DA1E7AD65D00BC83AA /* Results.swift */; };
 		90F6458E1E47C6DC00E45BB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6458D1E47C6DC00E45BB4 /* AppDelegate.swift */; };
 		90F645901E47C6DC00E45BB4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6458F1E47C6DC00E45BB4 /* LoginVC.swift */; };
 		90F645931E47C6DC00E45BB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F645911E47C6DC00E45BB4 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		9009CD221E48E1F200D8C090 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		9009CD241E48E20E00D8C090 /* Card.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Card.xib; sourceTree = "<group>"; };
 		9066C5781E708AD200B87CE8 /* ResultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
+		907CF4DA1E7AD65D00BC83AA /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		90F6458A1E47C6DB00E45BB4 /* BrainTeaser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainTeaser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F6458D1E47C6DC00E45BB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90F6458F1E47C6DC00E45BB4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				9009CD1E1E48CD3100D8C090 /* AnimationEngine.swift */,
+				907CF4DA1E7AD65D00BC83AA /* Results.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				90F645901E47C6DC00E45BB4 /* LoginVC.swift in Sources */,
 				90F8A0A71E67718C007FF046 /* CustomImage.swift in Sources */,
 				9009CD231E48E1F200D8C090 /* Card.swift in Sources */,
+				907CF4DB1E7AD65D00BC83AA /* Results.swift in Sources */,
 				90F6458E1E47C6DC00E45BB4 /* AppDelegate.swift in Sources */,
 				9009CD1F1E48CD3100D8C090 /* AnimationEngine.swift in Sources */,
 				9009CD211E48E02800D8C090 /* GameVC.swift in Sources */,

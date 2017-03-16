@@ -150,6 +150,7 @@
                         <outlet property="noBtn" destination="0AF-Ht-o56" id="NFp-vf-Okk"/>
                         <outlet property="titleLbl" destination="cgX-I2-ggu" id="1GA-Fb-RZ1"/>
                         <outlet property="yesBtn" destination="U5K-cI-UnA" id="pBa-NA-1gQ"/>
+                        <segue destination="032-KU-MFz" kind="show" identifier="ResultVC" id="pvS-R3-m9U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Li1-6h-fjh" userLabel="First Responder" sceneMemberID="firstResponder"/>
