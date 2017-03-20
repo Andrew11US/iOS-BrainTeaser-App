@@ -23,10 +23,16 @@ class ResultVC: UIViewController {
         correctAnswerLbl.text = String(correctAnswer)
         wrongAnswerLbl.text = String(wrongAnswer)
         
-        if correctAnswer >= 20 && correctAnswer <= 30 && wrongAnswer <= 10 {
-            resultLbl.text = "Well Done!"
-        } else if correctAnswer >= 30 && wrongAnswer <= 10 {
+        if correctAnswer > 20 && correctAnswer < 25 && wrongAnswer <= 5 {
+            resultLbl.text = "Not Bad!"
+        } else if correctAnswer >= 25 && correctAnswer < 30 && wrongAnswer <= 5 {
+            resultLbl.text = "Super!"
+        } else if correctAnswer >= 30 && correctAnswer < 35 && wrongAnswer <= 5 {
             resultLbl.text = "Great!"
+        } else if correctAnswer >= 35 && correctAnswer < 40 && wrongAnswer <= 5 {
+            resultLbl.text = "Amazing!"
+        } else if correctAnswer >= 40 && wrongAnswer <= 5 {
+            resultLbl.text = "!Mindblowing!"
         } else {
             resultLbl.text = "Results"
         }
